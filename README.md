@@ -1,20 +1,10 @@
 # Komma
 
-[![CI](https://github.com/ostis-ai/Komma/actions/workflows/test_conan.yml/badge.svg)](https://github.com/ostis-ai/Komma/actions/workflows/test_conan.yml)
-[![CI](https://github.com/ostis-ai/Komma/actions/workflows/test_native.yml/badge.svg)](https://github.com/ostis-ai/Komma/actions/workflows/test_native.yml)
-[![codecov](https://codecov.io/gh/ostis-ai/Komma/branch/main/graph/badge.svg?token=WU8O9Z1DNL)](https://codecov.io/gh/ostis-ai/Komma)
-[![license](https://img.shields.io/badge/License-MIT-yellow.svg)](COPYING.MIT)
-[![docker](https://img.shields.io/docker/v/ostis/Komma?arch=amd64&label=Docker&logo=Docker&sort=semver)](https://hub.docker.com/r/ostis/Komma)
-
-[![Quick Start](https://img.shields.io/badge/-Quick%20Start-black?style=for-the-badge&logo=rocket)](https://ostis-ai.github.io/Komma/quick_start)
-[![Docs](https://img.shields.io/badge/Docs-gray?style=for-the-badge&logo=read-the-docs)](https://ostis-ai.github.io/Komma)
-[![Community](https://img.shields.io/badge/-Community-teal?style=for-the-badge&logo=matrix)](https://app.element.io/index.html#/room/#ostis_tech_support:matrix.org)
-
 Short version: **Komma** is a software package that emulates **semantic computer behavior** by storing and processing knowledge in a semantic network. It uses **agent-based approach** to process knowledge graphs.
 
 From the perspective of graph databases, Komma is a **graph database management system** designed to store / retrieve knowledge graphs and run tasks (agents) on them.
 
-Komma stores and processes knowledge graphs represented in the SC-code (language of the universal knowledge representation). Theoretical basis of Komma is provided by the [**OSTIS Technology**](https://github.com/ostis-ai).
+Komma stores and processes knowledge graphs represented in the SC-code (language of the universal knowledge representation). Theoretical basis of Komma is provided by the [**OSTIS Technology**](https://github.com/lindy-son98).
 
 Both declarative (data, data structures, documentation, problems specification, etc.) and procedural (agents, programs, modules, systems, communication between systems) knowledge is represented using that same language.
 
@@ -23,10 +13,6 @@ Semantic network storage allows integrating problem solutions from different sub
 - **technology**
 - **programming and data representation language**
 - **software stack**.
-
-## Getting started
-
-To get started, check out our [quick start guide](https://ostis-ai.github.io/Komma/quick_start).
 
 
 ## This project contains:
@@ -40,7 +26,7 @@ To get started, check out our [quick start guide](https://ostis-ai.github.io/Kom
 
 ## Documentation
 
-- A brief user manual and developer docs are hosted on our [GitHub Pages](https://ostis-ai.github.io/Komma).
+- A brief user manual and developer docs are hosted on our [GitHub Pages](https://lindy-son98.github.io/Komma).
   - <details>
       <summary>Build documentation locally</summary>
 
@@ -59,14 +45,13 @@ To get started, check out our [quick start guide](https://ostis-ai.github.io/Kom
   - software interfaces
   - more rigorous theoretical calculations
 
-  is redistributed in a form of the SCn-TeX document [compiled in PDF format](https://github.com/ostis-ai/ostis-web-platform/blob/develop/docs/main.pdf).
 
-  **Alternatively** you can build Komma documentation yourself. To do that refer to the [scn-latex-plugin](https://github.com/ostis-ai/scn-latex-plugin) documentation.
+  **Alternatively** you can build Komma documentation yourself. To do that refer to the [scn-latex-plugin](https://github.com/lindy-son98/scn-latex-plugin) documentation.
 
 ## Feedback
 
 Contributions, bug reports and feature requests are welcome!
-Feel free to check our [issues page](https://github.com/ostis-ai/Komma/issues) and file a new issue (or comment in existing ones).
+Feel free to check our [issues page](https://github.com/lindy-son98/Komma/issues) and file a new issue (or comment in existing ones).
 
 ## License
 
