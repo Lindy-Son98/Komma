@@ -52,9 +52,3 @@ Semantic network storage allows integrating problem solutions from different sub
 
 Contributions, bug reports and feature requests are welcome!
 Feel free to check our [issues page](https://github.com/lindy-son98/Komma/issues) and file a new issue (or comment in existing ones).
-
-## License
-
-Distributed under the MIT License. Check [COPYING.MIT](COPYING.MIT) for more information.
-
-##### _This repository continues the development of [ostis-dev/Komma](https://github.com/ostis-dev/Komma) from version 0.6.0._
