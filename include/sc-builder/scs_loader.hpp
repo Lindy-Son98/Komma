@@ -4,12 +4,12 @@
  * (See accompanying file COPYING.MIT or copy at http://opensource.org/licenses/MIT)
  */
 
-#include "sc_builder_runner.hpp"
+#pragma once
 
-// LCOV_EXCL_START
-sc_int main(sc_int argc, sc_char * argv[])
+#include <sc-memory/sc_memory.hpp>
+
+class ScsLoader
 {
-  return RunBuilder(argc, argv);
-}
-
-// LCOV_EXCL_STOP
+public:
+  bool loadScsFile(ScMemoryContext & context, std::string const & filename);
+};
