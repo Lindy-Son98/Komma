@@ -1,0 +1,34 @@
+services:
+  machine:
+    image: ostis/Komma:latest
+    build:
+      context: .
+    volumes:
+      - ./kb:/kb
+      - kb-binary:/kb.bin
+    networks:
+      - Komma
+    ports:
+      - "8090:8090"
+    healthcheck:
+      test: "/Komma/scripts/healthcheck.sh"
+      interval: 5s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    environment:
+      # Use the commented env variable if you need to rebuild KB every startup.
+      - "REBUILD_KB=${REBUILD_KB:-0}"
+      - "KB_PATH=${KB_PATH:-/kb}"
+      - "BINARY_PATH=/Komma/build/Release/bin"
+      - "EXTENSIONS_PATH=/Komma/build/Release/lib/extensions"
+      - "CONFIG_PATH=/Komma/Komma.ini"
+      - "SC_SERVER_HOST=0.0.0.0"
+    command:
+      - "run"
+
+volumes:
+  kb-binary: {}
+
+networks:
+  Komma: {}

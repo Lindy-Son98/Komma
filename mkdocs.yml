@@ -1,0 +1,105 @@
+site_name: Komma
+dev_addr: 127.0.0.1:8002
+repo_url: https://github.com/ostis-ai/Komma
+edit_uri: edit/main/docs/
+
+extra_css:
+  - _assets/main.css
+
+extra_javascript:
+  - _assets/scg.min.js
+  - _assets/main.js
+
+nav:
+  - Home: index.md
+  - Quick Start: quick_start.md
+  - Docker: docker.md
+  - User Guides:
+      - C++ Guides:
+          - C++ Simple Guide for Implementing Agent: sc-memory/api/cpp/guides/simple_guide_for_implementing_agent.md
+      - Migrate to New Agent API: sc-tools/migrate_to_new_agent_api.md
+  - API:
+      - C++ API:
+          - C++ Core API: sc-memory/api/cpp/core/api.md
+          - C++ Extended API:
+              - C++ System Identifier API: sc-memory/api/cpp/extended/helper_api.md
+              - C++ ScTemplate API: sc-memory/api/cpp/extended/template_api.md
+              - C++ User Permissions API: sc-memory/api/cpp/extended/permissions_api.md
+              - C++ Agents API:
+                  - C++ Events API: sc-memory/api/cpp/extended/agents/events.md
+                  - C++ Event Subscriptions API: sc-memory/api/cpp/extended/agents/event_subscriptions.md
+                  - C++ Waiters API: sc-memory/api/cpp/extended/agents/waiters.md
+                  - C++ Agents API: sc-memory/api/cpp/extended/agents/agents.md
+                  - C++ Keynodes API: sc-memory/api/cpp/extended/agents/keynodes.md
+                  - C++ Actions API: sc-memory/api/cpp/extended/agents/actions.md
+                  - C++ Agent Context API: sc-memory/api/cpp/extended/agents/agent_context.md
+                  - C++ Modules API: sc-memory/api/cpp/extended/agents/modules.md
+      - Python API:
+          - Python Core API: https://github.com/ostis-ai/py-sc-client
+          - Python Extended API: https://github.com/ostis-ai/py-sc-kpm
+      - TypeScript API:
+          - TypeScript Core API: https://github.com/ostis-ai/ts-sc-client
+      - sc-element Types: scs/sc_element_types.md
+      - SCs-code: scs/scs.md
+  - Tools:
+      - Knowledge Base Builder: sc-tools/sc_builder.md
+      - Knowledge Base Repo File: sc-tools/kb_repo_file.md
+      - Komma Runner: sc-tools/sc_machine.md
+  - Build Instructions:
+      - Quick Start for Developers: build/quick_start.md
+      - Build System: build/build_system.md
+      - CMake Flags: build/cmake_flags.md
+      - Configuration File: build/config.md
+  - Development:
+      - Contributing Guide: CONTRIBUTING.md
+      - Code Style Guide: dev/codestyle.md
+      - Dev Container: dev/devcontainer.md
+  - License: https://github.com/ostis-ai/Komma/blob/main/COPYING.MIT
+  - Changelog: changelog.md
+
+plugins:
+   - search:
+      lang: en
+      separator: '[\s\-\.]+'
+
+theme: 
+  name: material
+  favicon: ostis-logo.png
+  logo: ostis-logo.png
+  palette:  # Defines color schemes for light and dark modes
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant       # Enables instant loading of pages
+    - navigation.tracking      # Automatically focuses active section in sidebar
+    - navigation.tabs          # Adds top-level sections as tabs
+    - navigation.sections      # Renders top-level sections as groups in sidebar
+    - navigation.expand        # Expands all collapsible sections by default
+    - navigation.top           # Adds a "back to top" button
+    - search.suggest           # Displays search suggestions 
+    - search.highlight         # Highlights search terms on result page
+    - content.action.edit      # Adds links to edit doc files
+    - content.tabs.link        # Shares link when clicking on a tab
+    - content.code.copy        # Adds a copy button to code blocks
+
+markdown_extensions:
+  - admonition                 # Allows creation of call-out boxes (e.g., notes, warnings)
+  - codehilite
+  - md_in_html                 # Allows Markdown syntax inside HTML blocks
+  - pymdownx.highlight:        # Enhances code block highlighting
+      anchor_linenums: true
+  - pymdownx.inlinehilite      # Enables inline code highlighting
+  - pymdownx.details           # Allows creating collapsible elements
+  - pymdownx.superfences       # Enables advanced fenced code blocks
