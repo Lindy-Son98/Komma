@@ -4,7 +4,7 @@ Short version: **Komma** is a software package that emulates **semantic computer
 
 From the perspective of graph databases, Komma is a **graph database management system** designed to store / retrieve knowledge graphs and run tasks (agents) on them.
 
-Komma stores and processes knowledge graphs represented in the SC-code (language of the universal knowledge representation). Theoretical basis of Komma is provided by the [**OSTIS Technology**](https://github.com/lindy-son98).
+Komma stores and processes knowledge graphs represented in the SC-code (language of the universal knowledge representation)..
 
 Both declarative (data, data structures, documentation, problems specification, etc.) and procedural (agents, programs, modules, systems, communication between systems) knowledge is represented using that same language.
 
